@@ -9,8 +9,6 @@ const userScorePara = document.querySelector("#playerScore");
 const compScorePara = document.querySelector("#compScore");
 
 
-
-
 // this function will produce a computer's choice which should be random;
 
 const genCompchoice = () => {
@@ -19,15 +17,12 @@ const genCompchoice = () => {
     return options[randchoiceId];
 }
 
-
 // draw match fuction:
 const drawFucn = () => {
     msgPara.innerText = 'Match is a draw!';
     msgPara.style.backgroundColor = '#86A5D9'
     msgPara.style.color = '#202A25'
     
-
-
 }
 
 // winner or looser decision taking function as named showWinner();
@@ -56,7 +51,6 @@ let playGame = (userChoice) => {
     // generate computer's choice;
     const compChoice = genCompchoice();
     
-
     // match draw:::
     if(userChoice === compChoice){
         drawFucn();
@@ -64,7 +58,7 @@ let playGame = (userChoice) => {
     } else {
       let playerWin = true;
       if(userChoice === 'rock'){
-
+    
         // paper , scissors
         playerWin = compChoice === 'paper' ? false : true;
       } else if(userChoice === 'paper'){
@@ -79,16 +73,9 @@ let playGame = (userChoice) => {
       }
 
       showWinner(playerWin,userChoice, compChoice);
-    }
-
-
-
-    
-
-    
+    }   
    
 }
-
 
 //this will track the user's choice ;
 choices.forEach((choice) =>{
