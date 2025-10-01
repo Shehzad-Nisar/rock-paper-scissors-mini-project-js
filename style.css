@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #D0DFFF; /* rgb(208, 223, 255) */
+
+}
+
+.choice:hover {
+    opacity: 0.7;
+}
+
+
+h1 {
+    background-color: #9e96a1;
+    color:whitesmoke;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+    /* background-color:hsl(225, 100%, 89%) */
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
